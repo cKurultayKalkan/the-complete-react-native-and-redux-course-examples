@@ -11,11 +11,13 @@ class LoginForm extends Component {
           <CardSection>
             <Input label="Email"
                    placeholder="user@gmail.com"
+                   value={this.state.email}
                    onChangeText={email => this.setState({email})}
-                   value={this.state.email}/>
+            />
           </CardSection>
           <CardSection>
-            <Input label="Password" secureTextEntry
+            <Input label="Password"
+                   secureTextEntry
                    placeholder="password"
                    value={this.state.password}
                    onChangeText={password => this.setState({password})}/>

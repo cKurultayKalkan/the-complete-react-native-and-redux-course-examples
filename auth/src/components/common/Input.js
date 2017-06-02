@@ -9,12 +9,11 @@ const Input = ({label, secureTextEntry, placeholder, value}) => {
       <View style={containerStyle}>
         <Text style={labelStyle}>{label}</Text>
         <TextInput style={inputStyle}
+                   secureTextEntry={secureTextEntry}
                    value={value}
                    autoCorrect={false}
-                   secureTextEntry={secureTextEntry}
                    placeholder={placeholder}
-                   onChangeText={onChangeText}
-        />
+                   onChangeText={onChangeText}/>
       </View>
   )
 };
@@ -25,13 +24,13 @@ const styles = {
     color: '#000',
     fontSize: 18,
     lineHeight: 23,
-    paddingRight:5,
-    paddingLeft:5
+    paddingRight: 5,
+    paddingLeft: 5
   },
   labelStyle: {
     fontSize: 18,
     flex: 1,
-    paddingLeft:20
+    paddingLeft: 20
   },
   containerStyle: {
     height: 40,
